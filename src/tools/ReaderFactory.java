@@ -1,18 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package sptvr19library;
+package tools;
 
 import entity.Reader;
 import java.util.Scanner;
 
-/**
- *
- * @author user
- */
-public class ReaderManager {
+
+public class ReaderFactory {
 
     public Reader addReader() {
         Reader reader = new Reader();
@@ -26,6 +18,10 @@ public class ReaderManager {
         reader.setPhone(scanner.nextLine());
         
         return reader;
+    }
+
+    public Reader createReader() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
